@@ -6,9 +6,6 @@ computer = ['rock', 'paper', 'scissors']
 computer = random.choice(computer)
 human = (input('Pick one: rock, paper, or scissors: ')).lower()
 
-# rock wins over scissors
-# paper wins over rock
-# scissors wins over paper
 print('COMPUTER picks:', computer)
 print('YOU pick', human)
 print()
