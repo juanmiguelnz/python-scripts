@@ -1,16 +1,17 @@
 import random, string, time
 
-picked_number = []
-while len(picked_number) < 6:
+# User input and check if input is a number and between 1 and 40.
+picked_numbers = []
+while len(picked_numbers) < 6:
     number = input('Enter your selected numbers between 1-40. Ex: 14:\n')
-    if number.isnumeric:
+    if number.isdigit:
         if int(number) <= 40 or int(number) >= 1:
-            picked_number.append(int(number))
+            picked_numbers.append(int(number))
         else:
             print('The number is either more than 40 or less than 1')
     else:
         print('Please pick numbers between 1 and 40.')
-print('You picked the following numbers:',picked_number, '\n')
+print('You picked the following numbers:',picked_numbers, '\n')
 
 # Generate winning lotto numbers.
 winning_numbers = random.sample(range(1,40), 6)
@@ -24,7 +25,7 @@ print('The winning numbers are:', winning_numbers, '\n')
 
 # Compare picked numbers to winning numbers
 count = 0
-for number in picked_number:
+for number in picked_numbers:
     time.sleep(1)
     if number in winning_numbers:
         print(number, 'has been drawn.')
