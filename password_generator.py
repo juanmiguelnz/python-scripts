@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/bin/bash python
 
 import random, pyperclip, string, secrets
 
