@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import requests, csv
 from bs4 import BeautifulSoup
 

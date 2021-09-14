@@ -1,4 +1,4 @@
-#!/bin/bash python
+#!/usr/bin/env python3
 
 from datetime import datetime
 import requests, time, os, smtplib, random
