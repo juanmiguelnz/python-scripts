@@ -33,4 +33,4 @@ for article in articles:
 
     csv_writer.writerow([post_title, post_summary, yt_link])
 
-csv_writer.close
+csv_file.close()
