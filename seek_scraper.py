@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from bs4 import BeautifulSoup
 import requests, csv
 
@@ -25,4 +27,5 @@ with open('jobs.csv', 'w') as csv_file:
             salary = 'No salary info provided'
 
         csv_writer.writerow([job_title, company, location, salary, job_link])
+    
     print('CSV file has been created successfully!')
