@@ -142,5 +142,6 @@ cython_debug/
 .csv
 
 #custom
-/etc
-/virtualenv
+etc/
+virtualenv/
+.DS_Store
