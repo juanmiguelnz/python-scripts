@@ -1,3 +1,7 @@
+#custom
+etc/
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -140,8 +144,3 @@ cython_debug/
 
 #CSV
 .csv
-
-#custom
-etc/
-virtualenv/
-.DS_Store
