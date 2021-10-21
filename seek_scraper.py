@@ -3,7 +3,7 @@
 from bs4 import BeautifulSoup
 import requests, csv
 
-url = 'https://www.seek.co.nz/jobs/full-time?daterange=31&keywords=%22devops%20engineer%22&salaryrange=120000-999999&salarytype=annual&sortmode=KeywordRelevance'
+url = 'https://www.seek.co.nz/jobs/in-All-Auckland/full-time?daterange=14&keywords=%22devops%20engineer%22&salaryrange=150000-999999&salarytype=annual&sortmode=ListedDate'
 request = requests.get(url).text
 soup = BeautifulSoup(request, 'lxml')
 jobs = soup.find_all('article')
