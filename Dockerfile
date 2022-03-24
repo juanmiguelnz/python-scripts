@@ -1,3 +1,3 @@
 FROM ubuntu
 
-RUN python --version
+RUN sudo apt update && sudo apt upgrade
