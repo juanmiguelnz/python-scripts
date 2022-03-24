@@ -23,4 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build the Docker image
-        run: docker container ls
+        run: | 
+              ls -al
+              docker container ls
