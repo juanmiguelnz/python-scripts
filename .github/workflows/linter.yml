@@ -24,8 +24,4 @@ jobs:
     steps:
       - name: Build the Docker image
         run: | 
-              pwd
-              ls -al
-              cd ..
-              pwd
-              ls -al
+              docker build --tag cd-tech .
