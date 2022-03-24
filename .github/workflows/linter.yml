@@ -28,3 +28,4 @@ jobs:
       - name: Build the Docker image
         run: | 
               docker build --tag cd-tech .
+              docker images
