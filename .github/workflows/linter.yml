@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0 # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0 # full git history is needed to get a proper list of changed files within `super-linter`
 
       - name: Lint Code Base
         uses: github/super-linter@v4
@@ -24,8 +24,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0 # Set fetch-depth: 0 to fetch all history for all branches and tags.
+          fetch-depth: 0 # set fetch-depth: 0 to fetch all history for all branches and tags.
       - name: Build the Docker image
         run: | 
-              pwd
-              ls -al
+              docker build --tag cd-tech .
